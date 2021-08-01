@@ -1,0 +1,52 @@
+<!--Declare HTML document type-->
+<!DOCTYPE html>
+<!--Begin html document-->
+<html lang="en">
+<!--Store metadata-->
+<head>
+    <!--Title the document-->
+    <title>Output Practice</title>
+</head>
+<!--Visible HTML content-->
+<body>
+<!--Visible Header-->
+<h1 id="primaryHeader">Output Practice</h1>
+<!--Paragraph block of text-->
+<p id="output1"></p>
+<button type="button" id="button1" onclick="myFunction1()">Output To Element</button>
+<button type="button" id="button2" onclick="myFunction2()">Output To Document</button>
+<br>
+<button type="button" id="button3" onclick="myFunction3()">Output To AlertBox</button>
+<button type="button" id="button4" onclick="myFunction4()">Output To Console</button>
+</body>
+<script>
+    var testVar = 6;
+    var testVar1 = "Test values: ";
+
+    //Display function output to the output1 paragraph
+    function myFunction1(){
+        //Concatenate variable values
+        var localVar = testVar1 + testVar;
+        //Assign the document element value
+        document.getElementById("output1").innerHTML = localVar;
+    }
+
+    //Display function output to the document for testing purposes
+    function myFunction2(){
+        var localVar =  testVar + 5;
+        document.write(localVar);
+    }
+
+    //Display function output to an alert box
+    function myFunction3(){
+        var localVar = "Alert: " + testVar1;
+        window.alert(localVar);
+    }
+
+    //Display function output to the console log
+    function myFunction4() {
+        var localVar = "log: " + testVar;
+        console.log(localVar);
+    }
+</script>
+</html>

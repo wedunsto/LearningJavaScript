@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="geek"></p>
+<p id="geek1"></p>
+<p id="geek2"></p>
+<button type="button" onclick="myFunction()">Click Me!</button>
+<button type="reset" onclick="errorFunction()">Dont Click Me</button>
+<!-- All scripts automatically called -->
+<script>
+    //Access document element and assigns it a string
+    document.getElementById("geek").innerHTML = "Welcome"
+</script>
+<script>
+    //Create a function that can be called
+    function myFunction(){
+        document.getElementById("geek1").innerHTML = "Hello";
+        document.getElementById("geek2").innerHTML = "How are you?";
+    }
+</script>
+<script>
+    function errorFunction(){
+        document.write("ERROR!");
+    }
+</script>
+</body>
+</html>
