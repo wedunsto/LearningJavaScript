@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Review</title>
+    </head>
+    <body>
+        <h1 id="test1"></h1>
+        <p id="test2"></p>
+        <button type="button">Press Me</button>
+    </body>
+</html>

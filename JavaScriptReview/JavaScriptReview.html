@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Review</title>
+    </head>
+    <body>
+        <h1 id="test1"></h1>
+        <p id="test2"></p>
+        <button type="button" onclick="firstFunction()">Press Me</button>
+        <button type="button" onclick="secondFunction()">Press Me</button>
+        <br>
+        <button type="button" onclick="thirdFunction()">Press Me</button>
+        <button type="button" onclick="fourthFunction()">Press Me</button>
+    </body>
+    <script>
+        function firstFunction(){
+            document.getElementById("test1").innerHTML = "Welcome to testing";
+        }
+        function secondFunction(){
+            console.log("Testing on the console log");
+        }
+        function thirdFunction(){
+            window.alert("Testing on the alert window");
+        }
+        function fourthFunction(){
+            document.write("Testing on the whole document")
+        }
+    </script>
+</html>
